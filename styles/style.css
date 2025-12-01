@@ -16,6 +16,10 @@
   list-style: circle;
 }
 
+.header__links-list-item {
+  line-height: 22px;
+}
+
 .header__links-list-item_no-bullit {
   list-style: none;
 }
@@ -117,7 +121,7 @@
 
 .bet-button {
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   padding: 12px 32px;
   font-size: 22px;
   color: #fff;
@@ -127,7 +131,8 @@
 
 /* Lots */
 .lots {
-  padding: 180px 50px 0;
+  margin-top: 180px;
+  margin-bottom: 120px;
 }
 
 .lots__heading {
@@ -184,19 +189,15 @@
 }
 
 .card__title {
-  position: relative;
-  z-index: 1;
   font-size: 22px;
   font-weight: bold;
   text-decoration: underline;
-  text-decoration-skip-ink: none;
+  text-underline-position: under;
   text-transform: uppercase;
   line-height: 120%;
 }
 
 .card__text {
-  position: relative;
-  z-index: 1;
   font-size: 20px;
   line-height: 120%;
 }
@@ -214,7 +215,7 @@
   display: grid;
   grid-template-columns: 430px 1fr;
   column-gap: 25px;
-  padding: 180px 50px 180px;
+  padding: 0 50px;
 }
 
 .about__logo {
@@ -258,7 +259,8 @@
   align-content: center;
   justify-items: center;
   column-gap: 40px;
-  padding: 180px 50px 90px;
+  margin-top: 180px;
+  padding: 0 50px 90px;
 }
 
 .footer__address {
