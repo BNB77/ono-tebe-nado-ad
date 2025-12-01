@@ -87,7 +87,6 @@
 
 .aligned-text_center {
   text-align: center;
-  padding-right: 30px;
 }
 
 .aligned-text_right {
@@ -142,15 +141,13 @@
 
 .lots__card-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 25px;
   list-style: none;
   margin-bottom: 30px;
 }
 
 .lots__card-list-item {
-  flex: 1 1 430px;
-  max-width: 430px;
+  width: 430px;
 }
 
 .card-link {
@@ -214,7 +211,7 @@
 .about {
   display: grid;
   grid-template-columns: 430px 1fr;
-  column-gap: 25px;
+  gap: 25px;
   padding: 0 50px 180px;
 }
 
