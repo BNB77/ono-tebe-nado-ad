@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 49px 92px 51px;
+  padding: 92px 50px 92px 50px;
 }
 
 .header__menu {
@@ -12,7 +12,7 @@
 
 .header__links-list {
   display: flex;
-  gap: 33px;
+  gap: 32px;
   list-style: circle;
 }
 
@@ -22,12 +22,12 @@
 
 .header__link {
   font-size: 18px;
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 .header__link_active {
-  border-bottom: none;
+  text-decoration: none;
 }
 
 .header__logo {
@@ -48,7 +48,8 @@
 .address {
   font-style: normal;
   font-size: 18px;
-  line-height: 24.3px;
+  line-height: 24px;
+  max-width: 240px;
 }
 
 /* Cover */
@@ -57,7 +58,6 @@
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
-  padding: 165px 50px 50px 50px;
   color: #fff;
   z-index: 0;
 }
@@ -72,29 +72,29 @@
 .cover__title {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   font-size: 100px;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 30px;
-  margin-bottom: 135px;
+  padding: 165px 50px 0;
 }
 
 .aligned-text {
   display: block;
-  line-height: 115%;
+  line-height: 115px;
 }
 
 .aligned-text_center {
+  margin-top: 20px;
   text-align: center;
 }
 
 .aligned-text_right {
+  margin-top: 20px;
   text-align: right;
 }
 
 .letter-spacing-extended {
-  letter-spacing: 60px;
+  letter-spacing: 30px;
 }
 
 .no-letter-spacing {
@@ -103,17 +103,16 @@
 
 .cover__description {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  gap: 78px;
+  margin: 135px 50px 50px;
 }
 
 .cover__description-text {
   font-size: 22px;
   line-height: 28px;
-  text-align: center;
   text-transform: uppercase;
-  word-spacing: 17px;
+  word-spacing: 18px;
 }
 
 .bet-button {
